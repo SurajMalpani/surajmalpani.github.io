@@ -68,6 +68,22 @@
       .feed-tags span { display: inline-block; font-size: .75rem; padding: 2px 10px; border-radius: 12px; background: #F4EEE2; margin: 0 6px 6px 0; }
       .feed-read { font-weight: 700; color: #207561; font-size: .9rem; }
       @media (prefers-reduced-motion: reduce) { .feed-dot:after { animation: none; } }
+      /* Hero without photo */
+      .site-blocks-cover, .site-blocks-cover > .container, .site-blocks-cover > .container > .row { height: auto; min-height: 100vh; }
+      .site-blocks-cover .text-intro { padding-top: 120px; padding-bottom: 60px; }
+      .hero-social { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+      .hero-social a { display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px 10px 14px; border-radius: 30px; background: #FFFDF8; color: #212529; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,.1); }
+      .hero-social a span { font-size: 1.75rem; line-height: 1; color: #207561; transition: .3s all ease; }
+      .hero-social a:hover { text-decoration: none; background: #207561; color: #fff; }
+      .hero-social a:hover span { color: #fff; }
+      @media (max-width: 575.98px) {
+        .site-blocks-cover h1 { font-size: 2.25rem; }
+        .site-blocks-cover .text-intro { padding-top: 100px; }
+        .hero-social { display: grid; grid-template-columns: 1fr 1fr; }
+        .hero-social a { justify-content: center; padding: 10px 14px; }
+      }
+      /* About: darker text */
+      #about-section p { color: #2b2b2b; }
     </style>
 
   </head>
@@ -133,15 +149,18 @@
 
           <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-8">
                 <h1 class="text-black">I'm Suraj Malpani</h1>
-                <p class="lead">I'm a Data Engineer who builds robust, resilient data pipelines.</p>
-                <p>9+ years delivering end-to-end data products for Fortune 500 companies including Nike, Microsoft, Daimler and Accenture, turning business requirements into automated, reliable pipelines that drive decisions, including supply chain optimizations that saved Nike over $70M.</p>
-                <p><a href="#services-section">Expertise: Data Engineering, AI Engineering, Political Analysis, Sustainability</a></p>
-                <p> </p>
-                <a href="https://www.linkedin.com/in/suraj-malpani/" class="social-circle" target="_blank"><span class="icon-linkedin"> </span></a>
-                <a href="https://github.com/SurajMalpani" class="social-circle" target="_blank"><span class="icon-github"></span> </a>
-                <a href="https://medium.com/@surajmalpani" class="social-circle" target="_blank"><span class="icon-medium"></span> </a>
+                <p class="lead">I'm a Data Engineer who builds robust, resilient, and scalable data products.</p>
+                <p>10+ of years delivering end-to-end data products for Fortune 500 companies including Nike, Microsoft, Daimler and Accenture, turning business requirements into automated, reliable data products that drive decisions, including supply chain optimizations that saved Nike over $70M.</p>
+                <p>Outside of work, I like to travel, I like running and yoga. I do get bored easily and often find myself picking up a new hobby. I like trying new things, currently dabbling into music, politics, DIY crafts, etc. </p>
+                <p><a href="#services-section">Expertise: Data &amp; ML Engineering, Web App Development, Political Analysis, Sustainability</a></p>
+                <div class="hero-social">
+                  <a href="https://www.linkedin.com/in/suraj-malpani/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"></span>LinkedIn</a>
+                  <a href="https://github.com/SurajMalpani" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"></span>GitHub</a>
+                  <a href="https://medium.com/@surajmalpani" target="_blank" rel="noopener" aria-label="Medium"><span class="icon-medium"></span>Medium</a>
+                  <a href="https://www.instagram.com/malpani_suraj" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram"></span>Instagram</a>
+                </div>
                 <!--<p><a href="#portfolio-section" class="btn smoothscroll btn-primary">Portfolio</a></p> -->
 
               </div>
@@ -149,8 +168,6 @@
           </div>
         </div>
       </div>
-
-      <img src="images/casual.jpg" alt="Image" class="img-face" data-aos="fade" style="width:680px;height:680px;">
 
 
     </div>
@@ -374,7 +391,7 @@
             <h2 class="section-title">My journey so far!</h2>
           </div>
           <div class="col-lg-4 order-1 order-lg-2">
-            <div>
+            <div class="mb-4 mb-lg-0">
             <img src="images/prof.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
@@ -383,8 +400,8 @@
             <p>Since then I've built data products at Daimler, Microsoft, and Nike, at Nike I led data engineering and analytics for supply chain programs that saved over $70M.</p>
           </div>
           <div class="col-lg-4 order-3 order-lg-3">
-            <p>I design pipelines that are scalable, observable and resilient to failure, using SQL, Python, AWS, Databricks and Snowflake. I'm AWS Certified and pursuing a Master's in AI to build intelligent systems that make data even more actionable.</p>
-            <p>Outside of work I'm passionate about sustainability, politics, music and DIY crafts. Let's connect if you'd like to collaborate on AI, Politics, or Sustainability initiatives.</p>
+            <p>When I'm not glued to my laptop, I love traveling and trying new things. Currently obsessed with putting house plants in every little corner I can find and gardening, painting a little bit here and there.</p>
+            <p>I'm passionate about sustainability, circular economy, reducing waste wherever we can. I'm dabbling into politics, music, and DIY crafts. Let's connect if you'd like to collaborate on AI, Politics, or Sustainability initiatives.</p>
             <p><a href="mailto:surajpmalpani@gmail.com" class="btn smoothscroll btn-primary">Contact Me</a></p>
           </div>
         </div>
@@ -510,18 +527,18 @@
             <div class="service d-flex h-100">
               <div class="service-number mr-4"><span class="icon-database"></span></div>
               <div class="service-about">
-                <h3>Data Engineering</h3>
-                <p>Robust, resilient batch and streaming pipelines that are monitored, tested and recover gracefully from failure. Expertise: SQL, Python, Spark, AWS, Databricks, Snowflake.</p>
+                <h3>Data &amp; ML Engineering</h3>
+                <p>Robust, resilient, scalable batch and streaming pipelines and production ML workflows that help business in the time of need. Expertise: SQL, Python, Spark, AWS, Databricks, Snowflake.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
             <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-memory"></span></div>
+              <div class="service-number mr-4"><span class="icon-laptop"></span></div>
               <div class="service-about">
-                <h3>AI Engineering Consulting</h3>
-                <p>Turn your data into intelligent systems, from ML pipelines to LLM-powered applications, built on clean, production-ready data foundations.</p>
+                <h3>Interactive Data Apps Development</h3>
+                <p>Fast, focused web apps that turn data into something people can use, like the <a href="#portfolio-section">live apps in my portfolio</a>. Built with JavaScript, Python, cloudflare, etc.</p>
               </div>
             </div>
           </div>
@@ -550,12 +567,13 @@
       </div>
 
 
-<!-- Testimonials -->
+<!-- Testimonials [Recommendations from Linkedin] -->
     <section class="site-section bg-dark">
       <div class="container" id="testimonials">
         <div class="row">
           <div class="col-12 mb-5 position-relative">
             <h2 class="section-title text-center mb-5 text-white">Testimonials</h2>
+            <h3 class="section-subtitle text-center mb-4 text-white">Recommendations from Linkedin</h3>
           </div>
         </div>
         <div class="owl-carousel slide-one-item" interval="100000">
@@ -563,6 +581,12 @@
             <blockquote>
               <p>"Suraj has worked on my team for almost a year here at Nike and has done a phenomenal job collaborating across multiple organizations from product designers to manufacturing partners. He is an incredibly skilled data / analytics manager. He also has experience in Tableau offering visualizations of the data collected across our supply chain. Suraj not only has done a great job with his daily responsibilities, he thinks ahead of how to modernize tools so our stakeholders remain engaged. I receive multiple emails on a weekly basis from teammates of how much they enjoy working with Suraj. It truly has been such a great experience having Suraj on our team!"</p>
               <p><cite>Cristina Beck, Materials Optimization Director, Nike</cite></p>
+            </blockquote>
+          </div>
+           <div class="slide">
+            <blockquote>
+              <p>"Suraj has an exceptional grasp of business needs and quickly understands ambiguous concepts.  This enabled him to understand our complex problems quickly.  He has a bright future ahead of him. It was a pleasure working with him during his (too) short internship"</p>
+              <p><cite>Jake De Jong, Engineer, Daimler</cite></p>
             </blockquote>
           </div>
           <div class="slide">
