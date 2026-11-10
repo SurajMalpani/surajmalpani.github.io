@@ -49,6 +49,25 @@
       .bg-light { background-color: #F4EEE2 !important; }
       .service { background: #FFFDF8; }
       .app-badge { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; padding: 2px 10px; border-radius: 12px; background: #007bff; color: #fff; margin-bottom: 10px; }
+      /* Blog live feed */
+      .feed-status { display: inline-flex; align-items: center; gap: 8px; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #207561; margin-bottom: 20px; }
+      .feed-dot { width: 10px; height: 10px; border-radius: 50%; background: #207561; position: relative; }
+      .feed-dot:after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: #207561; animation: feed-pulse 1.8s ease-out infinite; }
+      @keyframes feed-pulse { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(2.8); opacity: 0; } }
+      .blog-feed { list-style: none; margin: 0; padding: 0 0 0 28px; position: relative; }
+      .blog-feed:before { content: ""; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 2px; background: #E2D9C6; }
+      .feed-item { position: relative; margin-bottom: 20px; }
+      .feed-item:before { content: ""; position: absolute; left: -28px; top: 26px; width: 14px; height: 14px; border-radius: 50%; background: #FBF7EF; border: 2px solid #207561; }
+      .feed-item:first-child:before { background: #207561; }
+      .feed-card { display: block; padding: 22px 26px; background: #FFFDF8; color: #212529; box-shadow: 0 1px 2px rgba(0,0,0,.1); transition: .3s all ease-in-out; position: relative; top: 0; }
+      .feed-card:hover { text-decoration: none; color: #212529; box-shadow: 0 8px 50px -5px rgba(0,0,0,.1); top: -2px; }
+      .feed-card h3 { font-size: 1.25rem; margin: 6px 0 8px; }
+      .feed-card p { margin-bottom: 12px; }
+      .feed-meta { font-size: .8rem; color: #6c757d; }
+      .feed-new { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; padding: 1px 8px; border-radius: 10px; background: #207561; color: #fff; margin-right: 6px; }
+      .feed-tags span { display: inline-block; font-size: .75rem; padding: 2px 10px; border-radius: 12px; background: #F4EEE2; margin: 0 6px 6px 0; }
+      .feed-read { font-weight: 700; color: #207561; font-size: .9rem; }
+      @media (prefers-reduced-motion: reduce) { .feed-dot:after { animation: none; } }
     </style>
 
   </head>
@@ -96,6 +115,7 @@
                 <li><a href="#experience-section" class="nav-link">Experience</a></li>
                 <li><a href="#services-section" class="nav-link">Services</a></li>
                 <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#blog-section" class="nav-link">Blog</a></li>
               </ul>
             </nav>
 
@@ -203,9 +223,7 @@
                                 <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                 <div class="service d-flex h-100">
                                     <div class="service-about">
-                                    <img class="img-fluid" src="images/work.jpg" width="300" height="80">
                                     <a href="https://github.com/SurajMalpani/Shiny_H1b" target="_blank">
-                                    <p> </p>
                                     <h3>H1-B Visa - Shiny App</h3></a>
                                     <li>Interactive R Shiny app showing which industries, cities and employers sponsor H1-B visas</li>
                                     <li>Tools: R Shiny, plotly</li>
@@ -216,9 +234,7 @@
                                   <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                     <div class="service d-flex h-100">
                                     <div class="service-about">
-                                      <img class="img-fluid" src="images/retail.jpg" width="300" height="80">
                                       <a href="https://github.com/SurajMalpani/Retail_Scanner_Data_Analysis" target="_blank">
-                                      <p> </p>
                                       <h3>Retail Data Analysis</h3></a>
                                       <li>Marketing recommendations from point-of-sale data using regression, segmentation and forecasting</li>
                                       <li>Tools: SAS</li>
@@ -226,25 +242,11 @@
                                     </div></div>
                                    </div>
 
-                                   <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
-                                     <div class="service d-flex h-100">
-                                     <div class="service-about">
-                                       <img class="img-fluid" src="images/nlp.jpg" width="300" height="80">
-                                       <a href="https://github.com/SurajMalpani/NLP-using-Spark" target="_blank">
-                                       <p> </p>
-                                       <h3>NLP using Spark</h3></a>
-                                       <li>Text classification to detect disaster-related tweets</li>
-                                       <li>Tools: PySpark MLlib</li>
-                                       <a href="https://towardsdatascience.com/natural-language-processing-with-spark-9efef3564270?source=email-5120c2f3f19-1578287067734-layerCake.autoLayerCakeWriterNotification-------------------------a007adb9_e2a0_47c2_b12c_18e4c66c1ae0&sk=90b64f9ee285b37bd7057056d37bc947" target="_blank"><li>Project details</li></a>
-                                     </div></div>
-                                    </div>
 
                                    <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                      <div class="service d-flex h-100">
                                      <div class="service-about">
-                                       <img class="img-fluid" src="images/tweet.jpg" width="300" height="80">
                                        <a href="https://github.com/SurajMalpani/Twitter-Buzz-prediction" target="_blank">
-                                       <p> </p>
                                        <h3>Twitter Buzz Prediction</h3></a>
                                        <li>Regression and classification with GLM, SVM, boosting, PCA and neural networks</li>
                                        <li>Tools: Python, scikit-learn, TensorFlow, Keras</li>
@@ -255,9 +257,7 @@
                                     <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                       <div class="service d-flex h-100">
                                       <div class="service-about">
-                                        <img class="img-fluid" src="images/sports.jpg" width="300" height="80">
                                         <a href="https://github.com/SurajMalpani/Prescriptive-Optimization---CPLEX" target="_blank">
-                                        <p> </p>
                                         <h3>Sports Scheduling Using IBM Cplex</h3></a>
                                         <li>Built a constrained game schedule with linear programming</li>
                                         <li>Tools: IBM Cplex, docplex, Python</li>
@@ -281,9 +281,7 @@
                                       <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                         <div class="service d-flex h-100">
                                         <div class="service-about">
-                                          <img class="img-fluid" src="images/data.jpg" width="300" height="80">
                                           <a href="https://github.com/SurajMalpani/Customer_data" target="_blank">
-                                          <p> </p>
                                           <h3>Marketing Solutions - Prescriptive Analysis</h3></a>
                                           <li>RFM customer segmentation and market basket analysis for product recommendations</li>
                                           <li>Tools: Python, Tableau, IBM Cognos, Watson</li>
@@ -294,7 +292,6 @@
                                       <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                         <div class="service d-flex h-100">
                                         <div class="service-about">
-                                          <img class="img-fluid" src="images/old-cars.jpg" width="300" height="80">
                                           <a href="https://www.copart.com/" target="_blank">
                                           <h3>Copart Data Challenge</h3></a>
                                           <li>Predicted auction car prices with xgboost; presented to the Copart execs</li>
@@ -305,9 +302,7 @@
                                       <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                         <div class="service d-flex h-100">
                                         <div class="service-about">
-                                          <img class="img-fluid" src="images/spotify.jpg" width="300" height="80">
                                           <a href="https://www.kaggle.com/surajpm/clustering-spotify-songs-using-r" target="_blank">
-                                          <p> </p>
                                           <h3>Spotify Songs Clustering for Personalized Recommendations</h3></a>
                                           <li>Clustered songs with k-means, hierarchical clustering and DBSCAN</li>
                                           <li>Tools: R</li>
@@ -378,19 +373,19 @@
           <div class="col-12 mb-4 position-relative">
             <h2 class="section-title">My journey so far!</h2>
           </div>
-          <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-            <div class="bg-light pt-5">
-            <img src="images/prof.jpeg" alt="Image" class="img-fluid">
+          <div class="col-lg-4 order-1 order-lg-2">
+            <div>
+            <img src="images/prof.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-4 order-2 order-lg-1">
             <p>I started as a data engineer at Accenture, building ETL pipelines and reporting for enterprise clients, then earned my M.S. in Business Analytics at UT Dallas.</p>
-            <p>Since then I've built data products at Daimler, Microsoft and Nike, where I led data engineering and analytics for supply chain programs that saved over $70M. Today I'm a Senior Data Engineer at Kforce.</p>
+            <p>Since then I've built data products at Daimler, Microsoft, and Nike, at Nike I led data engineering and analytics for supply chain programs that saved over $70M.</p>
           </div>
           <div class="col-lg-4 order-3 order-lg-3">
-            <p>I design pipelines that are scalable, observable and resilient to failure, using SQL, Python, AWS, Databricks and Snowflake. I'm AWS Certified (Cloud Practitioner, AI Practitioner) and pursuing a Master's in AI to build intelligent systems that make data even more actionable.</p>
-            <p>Outside of work I'm passionate about sustainability, politics, music and DIY crafts. Let's connect if you'd like to collaborate on AI, politics or sustainability initiatives.</p>
-            <p><a href="mailto:surajmalpani23@gmail.com" class="btn smoothscroll btn-primary">Contact Me</a></p>
+            <p>I design pipelines that are scalable, observable and resilient to failure, using SQL, Python, AWS, Databricks and Snowflake. I'm AWS Certified and pursuing a Master's in AI to build intelligent systems that make data even more actionable.</p>
+            <p>Outside of work I'm passionate about sustainability, politics, music and DIY crafts. Let's connect if you'd like to collaborate on AI, Politics, or Sustainability initiatives.</p>
+            <p><a href="mailto:surajpmalpani@gmail.com" class="btn smoothscroll btn-primary">Contact Me</a></p>
           </div>
         </div>
       </div>
@@ -598,26 +593,74 @@
       </div>
     </section>
 
+<!-- #### Blog (live feed) -->
+    <section class="site-section" id="blog-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5">Blog</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="feed-status"><span class="feed-dot" aria-hidden="true"></span> Latest posts</div>
+
+            <ol class="blog-feed">
+
+              <li class="feed-item">
+                <a class="feed-card" href="https://medium.com/@surajmalpani/political-predictions-next-12-months-9063433671ad?sk=b5a1229203a215f7b3601bbdeede145e" target="_blank" rel="noopener">
+                  <div class="feed-meta"><span class="feed-new">New</span> Medium</div>
+                  <h3>Six political predictions</h3>
+                  <div class="feed-tags"><span>Politics</span><span>Predictions</span><span>FiveFortyThree</span></div>
+                  <span class="feed-read">Read article &rarr;</span>
+                </a>
+              </li>
+
+              <li class="feed-item">
+                <a class="feed-card" href="https://medium.com/data-science/natural-language-processing-with-spark-9efef3564270?sk=90b64f9ee285b37bd7057056d37bc947" target="_blank" rel="noopener">
+                  <div class="feed-meta">Towards Data Science &middot; Medium</div>
+                  <h3>Natural Language Processing with Spark</h3>
+                  <p>Classifying disaster-related tweets with PySpark MLlib, from text cleaning and feature extraction to model training at scale.</p>
+                  <div class="feed-tags"><span>NLP</span><span>PySpark</span><span>MLlib</span></div>
+                  <span class="feed-read">Read article &rarr;</span>
+                </a>
+              </li>
+
+              <li class="feed-item">
+                <a class="feed-card" href="https://medium.com/data-science/plotly-with-r-shiny-495f19f4aba3?sk=366de9b1ef5eb64033f262362e5b41f5" target="_blank" rel="noopener">
+                  <div class="feed-meta">Towards Data Science &middot; Medium</div>
+                  <h3>Plotly with R Shiny</h3>
+                  <p>Building an interactive R Shiny app with plotly to explore which industries, cities and employers sponsor H1-B visas.</p>
+                  <div class="feed-tags"><span>R Shiny</span><span>plotly</span><span>Data viz</span></div>
+                  <span class="feed-read">Read article &rarr;</span>
+                </a>
+              </li>
+
+              <li class="feed-item">
+                <a class="feed-card" href="https://medium.com/data-science/understanding-simpsons-paradox-using-2016-us-presidential-elections-8b7c093bb105?sk=36df7ae705c2ea182ae487e6745a845a" target="_blank" rel="noopener">
+                  <div class="feed-meta">Towards Data Science &middot; Medium</div>
+                  <h3>Understanding Simpson's Paradox using the 2016 US Presidential Elections</h3>
+                  <p>How a trend in aggregated data can reverse inside its subgroups, shown with real 2016 election results.</p>
+                  <div class="feed-tags"><span>Statistics</span><span>Politics</span><span>Elections</span></div>
+                  <span class="feed-read">Read article &rarr;</span>
+                </a>
+              </li>
+            </ol>
+
+            <p class="text-center mt-4"><a href="https://medium.com/@surajmalpani" target="_blank" rel="noopener" class="btn btn-primary">Follow on Medium</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <!-- Footer Block -->
     <footer class="site-section bg-light footer" id ="contact">
       <div class="container">
-        <div class="row mb-4">
-
-          <div class="col-md-3">
-            <h3 class="footer-title">Email Address</h3>
-            <p><span class="d-inline-block d-md-block">surajmalpani23@gmail.com</p>
-          </div>
+        <div class="row mb-3">
 
           <div class="col-md-6 mx-auto">
             <div class="row">
-              <div class="col-lg-4">
-                <h3 class="footer-title"><a href="https://medium.com/@surajmalpani" target="_blank">Blog</a></h3>
-                <ul class="list-unstyled">
-                  <li><a href = "https://medium.com/data-science/natural-language-processing-with-spark-9efef3564270?sk=90b64f9ee285b37bd7057056d37bc947" target="_blank">NLP with Spark</li> </a>
-                  <li><a href = "https://medium.com/data-science/plotly-with-r-shiny-495f19f4aba3?sk=366de9b1ef5eb64033f262362e5b41f5" target="_blank">R Shiny with Plotly Visuals</li> </a>
-                  <li><a href = "https://medium.com/data-science/understanding-simpsons-paradox-using-2016-us-presidential-elections-8b7c093bb105?sk=36df7ae705c2ea182ae487e6745a845a" target="_blank">Simpsons Paradox</li> </a>
-                </ul>
-              </div>
 
               <div class="col-lg-4">
                 <h3 class="footer-title">Data Social</h3>
