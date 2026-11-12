@@ -79,8 +79,8 @@
       @media (max-width: 575.98px) {
         .site-blocks-cover h1 { font-size: 2.25rem; }
         .site-blocks-cover .text-intro { padding-top: 100px; }
-        .hero-social { display: grid; grid-template-columns: 1fr 1fr; }
-        .hero-social a { justify-content: center; padding: 10px 14px; }
+        .hero-social { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        .hero-social a { flex-direction: column; justify-content: center; gap: 6px; padding: 12px 6px; border-radius: 16px; font-size: .85rem; }
       }
       /* About: darker text */
       #about-section p { color: #2b2b2b; }
@@ -161,7 +161,6 @@
                 <p><a href="#services-section">Expertise: Data &amp; ML Engineering, Web App Development, Political Analysis, Sustainability</a></p>
                 <div class="hero-social">
                   <a href="https://www.linkedin.com/in/suraj-malpani/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"></span>LinkedIn</a>
-                  <a href="https://github.com/SurajMalpani" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"></span>GitHub</a>
                   <a href="https://medium.com/@surajmalpani" target="_blank" rel="noopener" aria-label="Medium"><span class="icon-medium"></span>Medium</a>
                   <a href="https://www.instagram.com/malpani_suraj" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram"></span>Instagram</a>
                 </div>
@@ -197,7 +196,6 @@
                                     <li>Generates a Vedic astrological birth chart from birth date, time and place</li>
                                     <li>Tools: JavaScript, GitHub Pages</li>
                                     <a href="https://surajmalpani.github.io/vedic-chart/" target="_blank"><li>Open the app</li></a>
-                                    <a href="https://github.com/SurajMalpani/vedic-chart" target="_blank"><li>Source code</li></a>
                                   </div></div>
                                 </div>
 
@@ -210,7 +208,6 @@
                                     <li>Scores compatibility across the 8 Ashtakoot categories (36 gunas) from Moon sign and Nakshatra</li>
                                     <li>Tools: JavaScript, GitHub Pages</li>
                                     <a href="https://surajmalpani.github.io/Kundli-Milan/" target="_blank"><li>Open the app</li></a>
-                                    <a href="https://github.com/SurajMalpani/Kundli-Milan" target="_blank"><li>Source code</li></a>
                                   </div></div>
                                 </div>
 
@@ -223,7 +220,6 @@
                                     <li>Cocktail recommender: pick ingredients for surprise picks, or set weather, mood and strength for a ranked list</li>
                                     <li>Tools: JavaScript, Python data pipeline, TheCocktailDB</li>
                                     <a href="https://surajmalpani.github.io/drinkee/" target="_blank"><li>Open the app</li></a>
-                                    <a href="https://github.com/SurajMalpani/drinkee" target="_blank"><li>Source code</li></a>
                                   </div></div>
                                 </div>
 
@@ -236,7 +232,6 @@
                                     <li>Recommends vegetarian and vegan recipes from 34K+ dishes based on your ingredients, time and nutrition goals</li>
                                     <li>Tools: JavaScript, Python data pipeline, Food.com dataset</li>
                                     <a href="https://surajmalpani.github.io/munchee/" target="_blank"><li>Open the app</li></a>
-                                    <a href="https://github.com/SurajMalpani/munchee" target="_blank"><li>Source code</li></a>
                                   </div></div>
                                 </div>
 
@@ -244,22 +239,22 @@
                                 <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                 <div class="service d-flex h-100">
                                     <div class="service-about">
-                                    <a href="https://github.com/SurajMalpani/Shiny_H1b" target="_blank">
+                                    <a href="https://medium.com/data-science/plotly-with-r-shiny-495f19f4aba3?sk=366de9b1ef5eb64033f262362e5b41f5" target="_blank">
                                     <h3>H1-B Visa - Shiny App</h3></a>
                                     <li>Interactive R Shiny app showing which industries, cities and employers sponsor H1-B visas</li>
                                     <li>Tools: R Shiny, plotly</li>
                                     <a href="https://towardsdatascience.com/plotly-with-r-shiny-495f19f4aba3?source=email-5120c2f3f19-1577358081933-layerCake.autoLayerCakeWriterNotification-------------------------6471b704_c8c4_431b_bf5a_40d68373a439&sk=366de9b1ef5eb64033f262362e5b41f5" target="_blank"><li>Project details</li></a>
+                                    <a href="https://github.com/SurajMalpani/Shiny_H1b" target="_blank"><li>Source code</li></a>
                                     </div></div>
                                   </div>
 
                                   <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                     <div class="service d-flex h-100">
                                     <div class="service-about">
-                                      <a href="https://github.com/SurajMalpani/Retail_Scanner_Data_Analysis" target="_blank">
-                                      <h3>Retail Data Analysis</h3></a>
+                                      <h3>Retail Data Analysis</h3>
                                       <li>Marketing recommendations from point-of-sale data using regression, segmentation and forecasting</li>
                                       <li>Tools: SAS</li>
-                                      <a href="https://github.com/SurajMalpani/Retail_Scanner_Data_Analysis" target="_blank"><li>Project details</li></a>
+                                      <a href="https://github.com/SurajMalpani/Retail_Scanner_Data_Analysis" target="_blank"><li>Source code</li></a>
                                     </div></div>
                                    </div>
 
@@ -267,22 +262,20 @@
                                    <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                      <div class="service d-flex h-100">
                                      <div class="service-about">
-                                       <a href="https://github.com/SurajMalpani/Twitter-Buzz-prediction" target="_blank">
-                                       <h3>Twitter Buzz Prediction</h3></a>
+                                       <h3>Twitter Buzz Prediction</h3>
                                        <li>Regression and classification with GLM, SVM, boosting, PCA and neural networks</li>
                                        <li>Tools: Python, scikit-learn, TensorFlow, Keras</li>
-                                       <a href="https://github.com/SurajMalpani/Twitter-Buzz-prediction" target="_blank"><li>Project code</li></a>
+                                       <a href="https://github.com/SurajMalpani/Twitter-Buzz-prediction" target="_blank"><li>Source code</li></a>
                                      </div></div>
                                     </div>
 
                                     <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                       <div class="service d-flex h-100">
                                       <div class="service-about">
-                                        <a href="https://github.com/SurajMalpani/Prescriptive-Optimization---CPLEX" target="_blank">
-                                        <h3>Sports Scheduling Using IBM Cplex</h3></a>
+                                        <h3>Sports Scheduling Using IBM Cplex</h3>
                                         <li>Built a constrained game schedule with linear programming</li>
                                         <li>Tools: IBM Cplex, docplex, Python</li>
-                                        <a href="https://github.com/SurajMalpani/Prescriptive-Optimization---CPLEX" target="_blank"><li>Project details</li></a>
+                                        <a href="https://github.com/SurajMalpani/Prescriptive-Optimization---CPLEX" target="_blank"><li>Source code</li></a>
                                       </div></div>
                                      </div>
 
@@ -295,18 +288,17 @@
                                          <h3>Texas Level R Competition, Winners 2nd Place</h3></a>
                                          <li>Visual analysis of crime patterns across 5.5M+ NYC crime records</li>
                                          <li>Tools: R, ggplot, ggmap</li>
-                                         <a href="https://github.com/SurajMalpani/NYC_Crime_Geospatial_Analysis" target="_blank"><li>Project details</li></a>
+                                         <a href="https://github.com/SurajMalpani/NYC_Crime_Geospatial_Analysis" target="_blank"><li>Source code</li></a>
                                        </div></div>
                                       </div>
 
                                       <div class="item web col-md-6 col-lg-4 col-xl-4 mb-4">
                                         <div class="service d-flex h-100">
                                         <div class="service-about">
-                                          <a href="https://github.com/SurajMalpani/Customer_data" target="_blank">
-                                          <h3>Marketing Solutions - Prescriptive Analysis</h3></a>
+                                          <h3>Marketing Solutions - Prescriptive Analysis</h3>
                                           <li>RFM customer segmentation and market basket analysis for product recommendations</li>
                                           <li>Tools: Python, Tableau, IBM Cognos, Watson</li>
-                                          <a href="https://github.com/SurajMalpani/Customer_data" target="_blank"><li>Project details</li></a>
+                                          <a href="https://github.com/SurajMalpani/Customer_data" target="_blank"><li>Source code</li></a>
                                         </div></div>
                                        </div>
 
@@ -703,7 +695,6 @@
           <div class="col-md-3">
             <h3 class="footer-title">Let's Connect!</h3>
             <a href="https://www.linkedin.com/in/suraj-malpani/" class="social-circle" target="_blank"><span class="icon-linkedin"></span></a>
-            <a href="https://github.com/SurajMalpani" class="social-circle" target="_blank"><span class="icon-github"></span></a>
             <a href="https://medium.com/@surajmalpani" class="social-circle" target="_blank"><span class="icon-medium"></span></a>
             <a href="https://www.instagram.com/malpani_suraj" class="social-circle" target="_blank"><span class="icon-instagram"></span></a>
           </div>
