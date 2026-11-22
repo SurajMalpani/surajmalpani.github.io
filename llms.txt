@@ -1,0 +1,38 @@
+# Suraj Malpani
+
+> Suraj Malpani is a Data & AI Engineer with 10+ years of building data products for Nike, Microsoft, Daimler, and Accenture. He now builds real-time streaming pipelines and agentic AI systems, with a focus on sustainability, waste, and food.
+
+Portfolio: https://surajmalpani.github.io/
+
+## Services
+
+- Data & AI Engineering
+- Agentic AI Solutions
+- Data Product Development
+- Policy Analysis
+- Sustainability Consulting
+
+## Projects
+
+- [Vedic Kundali](https://kundli.vayuputra.co/): Vedic birth chart (Janam Kundli) generator.
+- [Kundali Milan](https://match.vayuputra.co/): Ashtakoot (36 guna) compatibility calculator with a perfect-match finder.
+- [Drinkee](https://drinkee.vayuputra.co/): Cocktail recommender by ingredients, weather, mood, and strength.
+- [Munchee](https://munchee.vayuputra.co/): Vegetarian and vegan recipe finder from the ingredients you have.
+- [H-1B Employer Explorer](https://h1b.vayuputra.co/): USCIS H-1B approvals, denials, and salaries by employer since FY 2009.
+- [Germany Visa Sponsor Explorer](https://germany.vayuputra.co/): German employers offering visa, Blue Card, or relocation support, with salaries.
+- [Mango](https://mango.vayuputra.co/): Gentle yoga session builder for how you feel today.
+- [Bingo 2027](https://bingo.vayuputra.co/): Personal bingo card of 24 things to do in 2027.
+
+All free tools are published by [Vayuputra](https://vayuputra.co/), his independent studio.
+
+## Education and credentials
+
+- M.S. Business Analytics, The University of Texas at Dallas
+- B.E. Engineering, University of Mumbai
+- AWS Certified AI Practitioner; AWS Certified Cloud Practitioner
+
+## Links
+
+- [LinkedIn](https://www.linkedin.com/in/suraj-malpani/)
+- [Medium](https://medium.com/@surajmalpani)
+- [Kaggle](https://www.kaggle.com/surajpm)
