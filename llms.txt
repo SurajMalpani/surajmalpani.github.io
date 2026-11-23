@@ -22,6 +22,8 @@ Portfolio: https://surajmalpani.github.io/
 - [Germany Visa Sponsor Explorer](https://germany.vayuputra.co/): German employers offering visa, Blue Card, or relocation support, with salaries.
 - [Mango](https://mango.vayuputra.co/): Gentle yoga session builder for how you feel today.
 - [Bingo 2027](https://bingo.vayuputra.co/): Personal bingo card of 24 things to do in 2027.
+- [Hola](https://hola.vayuputra.co/): Spanish and Portuguese flashcards with pronunciation.
+- [Wai](https://wai.vayuputra.co/): Thai flashcards with Bangkok pronunciation and tone marks.
 
 All free tools are published by [Vayuputra](https://vayuputra.co/), his independent studio.
 
